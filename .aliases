@@ -1,3 +1,4 @@
 alias nps="neuro ps --owner mvasilkovsky | less -S"
 alias nf=neuro-flow
+alias tmuxx="tmux new-session \; split-window -v \; split-window -h \; split-window -v \; select-pane -U \; select-pane -U \; split-window -h \; split-window -v\; new-window \; split-window -v \; split-window -h \; split-window -v \; select-pane -U \; select-pane -U \; split-window -h \; split-window -v \; new-window \; split-window -v \; split-window -h \; split-window -v \; select-pane -U \; select-pane -U \; split-window -h \; split-window -v ;\ attach"
 

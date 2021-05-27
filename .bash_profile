@@ -9,14 +9,14 @@ export PS1="\[\e[2;33m\]\\A\[\e[m\] \\W \[\e[2;35m\][\$(__git_ps1 '%s')]\[\e[m\]
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/starlight/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/usr/local/Caskroom/miniconda/base/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/starlight/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/starlight/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
+        . "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/starlight/miniconda3/bin:$PATH"
+        export PATH="/usr/local/Caskroom/miniconda/base/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -41,7 +41,7 @@ export PATH="$PATH:~/scripts"
 export PATH="/usr/local/Cellar/nano/4.7/bin/:$PATH"
 
 # Making conda avaliable in tmux
-source /Users/starlight/miniconda3/etc/profile.d/conda.sh 
+# source ~/miniconda3/etc/profile.d/conda.sh   # commented out by conda initialize
 [[ -z $TMUX ]] || conda deactivate; conda activate base
 
 
@@ -60,7 +60,7 @@ export GOPATH=~/go/
 export CC=clang
 
 # Neuro completion
-# eval "$(_NEURO_COMPLETE=source /Users/starlight/miniconda3/bin/neuro)"
+# eval "$(_NEURO_COMPLETE=source ~/miniconda3/bin/neuro)"
 
 # Java Maven
 PATH="/Applications/apache-maven-3.6.3-bin.zip/bin:$PATH"

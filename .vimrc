@@ -70,7 +70,7 @@ set incsearch
 
 " Unbind some useless/annoying default key bindings.
 nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
-imap jj <ESC>l
+imap jj <ESC>;
 
 " Disable audible bell because it's annoying.
 set noerrorbells visualbell t_vb=
