@@ -1,0 +1,3 @@
+alias nps="neuro ps --owner mvasilkovsky | less -S"
+alias nf=neuro-flow
+
