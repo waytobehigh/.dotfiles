@@ -5,7 +5,7 @@ autoload -Uz compinit && compinit -u
 setopt prompt_subst
 source .git-prompt.sh
 # Git branch tracking
-export PROMPT='%F{255}%1~%f %F{8}%T%f %F{54}[$(__git_ps1 "%s")]%f$ '
+export PROMPT='%F{8}%T%f %F{255}%1~%f %F{54}[$(__git_ps1 "%s")]%f$ '
 
 if [ -f ~/.aliases ]; then
     source ~/.aliases

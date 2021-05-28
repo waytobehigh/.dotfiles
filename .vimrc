@@ -3,6 +3,8 @@ set tabstop=4
 " Activate Pathogen
 execute pathogen#infect()
 
+colorscheme fahrenheit
+
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
